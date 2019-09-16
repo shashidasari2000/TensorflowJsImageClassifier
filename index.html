@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' href='styles.css'/>
+
+    <!-- Load the latest version of TensorFlow.js -->
+    <script src="https://unpkg.com/@tensorflow/tfjs"></script>
+    <script src="https://unpkg.com/@tensorflow-models/mobilenet"></script>
+
+    <title> Image Classifier with MobileNet </title>
+ </head>
+
+
+  <body>
+    <!-- <img id="logo" src = "img/logo-sk.png"> <br>
+    <img style='margin-top: -6px; z-index: 19;' id="header" src = "img/header.png" height ="320">
+    <h1 style='margin-top: -35px'> Image Classifier powered by Tensorflow.js</h1>
+    <br>
+    <hr/>
+    <br>
+
+        Mobile Net is a very efficient image classifier.
+        It is very powerful and requires only few resources that it even runs on a smartphone! -
+        <em> <strong> Try it!</strong> </em>
+        <br>
+         <br>
+
+    <hr/>
+    <br> -->
+
+    <!-- *********** Image Classification with Image Upload ***********-->
+
+
+    <h2> Upload a Picture</h2>
+    <!-- Upload Function with File Preview -->
+    <input type="file" accept=".png, .jpg, .jpeg" height="200"
+        onchange="document.getElementById('output').src = window.URL.createObjectURL(this.files[0])">
+
+    <!-- Predict button, calls predict function in Javascript -->
+    <button id="butimage" onclick="app()"> Predict! </button>
+
+
+    <!-- Window for Picture Preview -->
+    <div class = "window">
+            <span class="helper"></span> 
+            <img class="center" id="output" src="imp/penguin.jpg" />
+    </div>
+    <div class = "result" id="console_pic">Result</div>
+    <br>
+
+    
+    <br>
+
+    <!-- *********** Image Classification with Webcam ***********-->
+
+    <!-- <h2> Use your Webcam! </h2> -->
+
+     <!-- Button, activates Webcam function in Javascript -->
+    <!-- <button id="butwebcam"  onclick="start_webcam()"> Activate Webcam </button> -->
+
+    <!-- Window for Webcam Stream -->
+    <!-- <div class = "window">
+        <span class="helper"></span>
+        <video autoplay playsinline muted id="webcam" class = "center" width="320" height="240"></video>
+    </div> -->
+
+    <!-- Box with Result -->
+    <!-- <div class = "result" id="console_vid">Result</div>
+    <hr/>
+
+    <br>
+    Page-Design by Stefan K, Image Classification with google Tensorflow.js
+    <br>
+    <br>  -->
+
+
+
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+
+  </body>
+
+</html>
+
+
